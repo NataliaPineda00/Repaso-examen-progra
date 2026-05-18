@@ -1,9 +1,9 @@
-# CRUD DE TABLAS DE MULTIPLICAR CON CICLO FOR
+#CRUD DE TABLAS DE MULTIPLICAR CON CICLO FOR
 
-# Lista para guardar registros
+#REGISTROS
 registros = []
 
-# CREATE
+#INGRESO DE DATOS
 def crear():
     limite_tablas = int(input("Ingrese el límite de tablas: "))
     limite_numeros = int(input("Ingrese el límite de números: "))
@@ -18,7 +18,7 @@ def crear():
 
     print("\nTABLAS DE MULTIPLICAR\n")
 
-    # Ciclo FOR para generar tablas
+    #IMPLEMENTACION CICLO FOR
     for tabla in range(1, limite_tablas + 1):
 
         print(f"--- TABLA DEL {tabla} ---")
@@ -31,7 +31,6 @@ def crear():
         print()
 
 
-# READ
 def leer():
     if len(registros) == 0:
         print("No hay registros guardados.")
@@ -45,7 +44,7 @@ def leer():
                   f"Números: {dato['numeros']}")
 
 
-# UPDATE
+
 def actualizar():
     leer()
 
@@ -67,7 +66,6 @@ def actualizar():
             print("Opción inválida.")
 
 
-# DELETE
 def eliminar():
     leer()
 
