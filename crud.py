@@ -8,7 +8,7 @@ def crear():
     limite_tablas = int(input("Ingrese el límite de tablas: "))
     limite_numeros = int(input("Ingrese el límite de números: "))
 
-    # Guardar datos
+    #REGISTRO DE DATOS
     datos = {
         "tablas": limite_tablas,
         "numeros": limite_numeros
